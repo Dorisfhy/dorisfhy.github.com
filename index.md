@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 流茵's Blog 
-tagline: 懒也是一种人生态度@_@
+title: 
+tagline: 天道酬勤@_@
 ---
 {% include JB/setup %}
 
