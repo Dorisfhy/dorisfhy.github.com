@@ -63,3 +63,134 @@
   background: #57A957;
   border: 1px solid #4c964d;
   color: #FFF; }
+
+.currentDay{
+   line-height: 20px;
+   overflow: hidden;
+   font-family: 'Microsoft Yahei';
+   font-size: 14px;
+   color: #0088cc;
+   position: fixed;
+   left:0;
+   bottom:0;
+}
+.container-body{
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+.navbar{
+    position: relative;
+    width: 100%;
+    height: 70px;
+    margin: 0 auto;
+    background: #222;
+    background: -moz-linear-gradient(top, #333333 0%, #222222 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #333333), color-stop(100%, #222222));
+    background: -webkit-linear-gradient(top, #333333 0%, #222222 100%);
+    background: -o-linear-gradient(top, #333333 0%, #222222 100%);
+    background: -ms-linear-gradient(top, #333333 0%, #222222 100%);
+    background: linear-gradient(to bottom, #333333 0%, #222222 100%);
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid #333;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.navbar .brand{
+  padding:0;
+}
+.navbar-inner{
+  min-height:40px;
+  padding-left:20px;
+  padding-right:20px;
+  background:none;
+  border:none;
+  *zoom:1;
+  }
+
+.navbar h1 {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  float: left; }
+.navbar h1 a {
+  display: block;
+  width: 100%;
+  height: 100%; }
+.navbar h1 img {
+  width: 100%;
+  height: 100%;
+  position: absolute; }
+
+.navbar h1 .box-1,.navbar h1 .box-2,.navbar h1 .box-3,.navbar h1 .box-4 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.5s cubic-bezier(0.75, -0.3, 0.31, 2);
+  -moz-transition: all 0.5s cubic-bezier(0.75, -0.3, 0.31, 2);
+  -ms-transition: all 0.5s cubic-bezier(0.75, -0.3, 0.31, 2);
+  -o-transition: all 0.5s cubic-bezier(0.75, -0.3, 0.31, 2);
+  transition: all 0.5s cubic-bezier(0.75, -0.3, 0.31, 2); 
+  }
+  .navbar h1 .box-1,.navbar h1 .box-3{
+    background: #4A5B3F; }
+  .navbar h1 .box-2,.navbar h1 .box-4 {
+    background: #649426; }
+  .navbar h1 .box-0{
+    background: #fff; 
+  }
+.navbar h1.open .box-1 {
+  -webkit-transform: rotate(8deg) translateX(8px);
+  -moz-transform: rotate(8deg) translateX(8px);
+  -ms-transform: rotate(8deg) translateX(8px);
+  -o-transform: rotate(8deg) translateX(8px);
+  transform: rotate(8deg) translateX(8px); }
+  .navbar h1.open .box-3 {
+  -webkit-transform: rotate(-8deg) translateX(-8px);
+  -moz-transform: rotate(-8deg) translateX(-8px);
+  -ms-transform: rotate(-8deg) translateX(-8px);
+  -o-transform: rotate(-8deg) translateX(-8px);
+  transform: rotate(-8deg) translateX(-8px); }
+.navbar h1.open .box-2 {
+  -webkit-transform: rotate(4deg) translateX(4px);
+  -moz-transform: rotate(4deg) translateX(4px);
+  -ms-transform: rotate(4deg) translateX(4px);
+  -o-transform: rotate(4deg) translateX(4px);
+  transform: rotate(4deg) translateX(4px); }
+
+.navbar h1.open .box-4{
+  -webkit-transform: rotate(-4deg) translateX(-4px);
+  -moz-transform: rotate(-4deg) translateX(-4px);
+  -ms-transform: rotate(-4deg) translateX(-4px);
+  -o-transform: rotate(-4deg) translateX(-4px);
+  transform: rotate(-4deg) translateX(-4px); 
+  }
+
+.navbar h1.open:hover .box-1, .navbar h1.open:hover .box-2,.navbar h1.open:hover .box-3 ,.navbar h1.open:hover .box-4{
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none; }
+
+.navbar .nav{
+  margin-top: 12px;
+  color: #fff;
+}
+.navbar .nav>li>a{
+  color: #fff;
+  text-shadow:none;
+  font-family: 'Microsoft Yahei';
+  font-size: 14px;
+}
+.navbar .nav>li>a:hover{
+  color: #fff;
+  text-shadow: 0 2px 0 #999;
+};
