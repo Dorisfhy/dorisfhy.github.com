@@ -1,72 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
-    <meta name="author" content="{{ site.author.name }}">
+---
+layout: page
+title: about
+header: Posts By about
+group: navigation
+---
+{% include JB/setup %}
 
-    <!-- Enable responsive viewport -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Le styles -->
-    <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
-    <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
-
-    <!-- Le fav and touch icons -->
-  <!-- Update these with your own images
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-  -->
-
-    <!-- atom & rss feed -->
-    <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
-    <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
-    <script src="{{ ASSET_PATH }}/js/jquery-1.9.1.min.js?t=201304241410"></script>
-    <script src="{{ ASSET_PATH }}/js/global.js?t=201304241410"></script>
-  </head>
-
-  <body>
-    <div class="navbar">
-      <div class="navbar-inner">
-        <div class="container-body">
-          <!--<a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>-->
-          <h1 class="open brand">
-              <a href="/">
-                <div class="box-1"></div>
-                <div class="box-2"></div>
-                <div class="box-3"></div>
-                <div class="box-4"></div>
-                <img width="50" height="50" src="http://tp4.sinaimg.cn/1814952807/180/5634702874/0" alt="Doris_fhy"/>
-              </a>
-          </h1>
-          <ul class="nav">
-            {% assign pages_list = site.pages %}
-            {% assign group = 'navigation' %}
-            {% include JB/pages_list %}
-            <li><a href="/about.html">About me</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="container-body">
-        About me !!
-      
-
-    </div>
-  
-
-
-      <a class="v-fork-me" href="https://github.com/Dorisfhy/dorisfhy.github.com" rel="nofollow">
-          <img src="/assets/themes/twitter/img/forkme.png" alt="Fork me on GitHub"/>
-      </a>
-  </body>
-</html>
+<div class="person-about">
+  This is about me !!
+</div>
